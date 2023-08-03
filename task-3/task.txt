@@ -1,0 +1,8 @@
+Сверстать любой один блок из макета https://www.figma.com/file/2K5CFWkF4wB7xIaegYiwzk/enemer.pl-(Copy)?node-id=1091%3A90 из предложенных 
+баннер http://joxi.ru/Vrwv483ig8LvxA 
+услуги http://joxi.ru/L21EPzvsDg1Oq2
+этот блок http://joxi.ru/p27BQ9OUZWqx6m
+преимущества http://joxi.ru/4Akn4ovUVXaKg2
+о компании http://joxi.ru/YmEBxa8ULJ1D42
+
+При верстке опять таки используйте бустрап для облегчения задачи. И учитывайте адаптивность. В фигме есть макет десктопа и мобилки. Мобильное разрешение до 991px

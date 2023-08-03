@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-Bold.woff') format('woff'); 
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+        font-family: 'Nunito', sans-serif;
+}
+p{
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+}
+/* Изменение bootstrap шаблонов */
+.col{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 100%;
+    padding: 0;
+        
+}
+/* Сам блок */
+.row-block{
+    margin: 0;
+    margin-left: 170px;
+    margin-top: 110px;
+    max-width: 2000px;
+        
+}
+.block-img-2 {
+    background: url('../img/block-img-2.png') no-repeat;
+    background-size:cover;
+    height: 468px;
+    margin-top: calc(530px - 468px);
+    border-radius: 48px 0px 0px 48px;
+}
+
+.block-img {
+    background: url('../img/block-img.png') no-repeat;
+    background-size: cover;
+    height: 530px;
+    margin-left: -0.5rem;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.image-content {
+    position: absolute;
+    margin-top: 218px;
+    margin-left: 165px;
+    width: auto;
+    z-index: 2;
+}
+.image-content button{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    border-radius: 4px;
+    background: #78599C;
+    padding: 12px 40px;
+    margin-top: 48px;
+    border: none;
+}
+/* Адаптивность для мобильной версии */
+@media (max-width: 991px) {
+    .row-block{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .block-img{
+        background-position: center top;
+        margin-left: 0px;
+    }
+    .block-img-2{
+        display: none;
+    }
+    .image-content {
+    margin-top: 218px;
+    margin-left: 15px;
+    width: calc(100% - 30px);
+    }
+    .image-content button{
+        margin-top: 16px;
+    }
+}
