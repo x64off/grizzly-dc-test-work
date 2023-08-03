@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Определение страны по номеру телефона</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/toast.css">
+    <link rel="stylesheet" href="assets/css/popup.css">
+</head>
+<body>
+    <div id="toast-container"></div>
+    <!-- Форма для ввода номера телефона -->
+    <div class="container mt-5">
+        <form id="phoneNumberForm">
+            <div class="form-group" style="display: none;" id="country-block">
+                <label for="phoneNumber">Страна:</label>
+                <input type="text" class="form-control" id="country" name="country" disabled required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Введите номер телефона:</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Определить страну</button>
+        </form>
+    </div>
+
+    <!-- Всплывающий попап о куки -->
+    <div id="cookiePopup" class="popup d-none">
+        <p>На этом сайте используются куки. Нажмите кнопку "Принять", чтобы закрыть это уведомление.</p>
+        <button id="acceptCookies" class="btn btn-success">Принять</button>
+        <button id="closePopup" class="btn btn-secondary">Закрыть</button>
+    </div>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/task.js"></script>
+</body>
+</html>
