@@ -1,0 +1,10 @@
+/* Попап с куки */
+.popup {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

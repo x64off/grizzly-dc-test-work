@@ -27,17 +27,5 @@ function getCountryByPhoneNumber($phoneNumber)
     return 'Неизвестная страна'; // Если код страны не найден, вернем "Неизвестная страна"
 }
 
-
-// Заданные номера телефонов
-$phoneNumbers = array(
-    '+375(29)123-45-67',
-    '+7 (495) 123 45 67',
-    '7 777 123-45-67'
-);
-
-// Определяем страну для каждого номера телефона
-foreach ($phoneNumbers as $phoneNumber) {
-    $country = getCountryByPhoneNumber($phoneNumber);
-    echo "Номер телефона: {$phoneNumber}, страна: {$country}<br>";
-}
+include_once 'templates/index.html';
 ?>
